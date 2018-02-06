@@ -14,9 +14,9 @@ module.exports = {
     static: './static/**/*',
     html:  [resolveDev('/**/*.html'), '!./src/include/**/*'],
     allhtml: resolveDev('/**/*.html'),
-    styles: resolveDev('static/styles/*.{scss,css}'),
+    styles: resolveDev('static/css/*.{scss,css}'),
     script: resolveDev('static/js/**/*.js'),
-    images: resolveDev('static/images/**/*.{png,jpg,gif,svg}'),
+    images: resolveDev('static/img/**/*.{png,jpg,gif,svg}'),
   },
 
   build: {
@@ -24,7 +24,7 @@ module.exports = {
     html: resolveBuild(''),
     styles: resolveBuild('static/css'),
     script: resolveBuild('static/js'),
-    images: resolveBuild('static/images'),
+    images: resolveBuild('static/img'),
   },
 
   zip: {

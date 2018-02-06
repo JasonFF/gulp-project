@@ -1,0 +1,160 @@
+body .wrapper, body .wrapper .content {
+  width: 100%; }
+  body .wrapper .content {
+    min-width: 1200px;
+    max-width: 1920px; }
+    body .wrapper .content .qulityBanner {
+      width: 100%;
+      height: 450px;
+      background: url(../img/highQulity/img_fuwulinian.png) no-repeat center top; }
+      body .wrapper .content .qulityBanner .bannerInfo {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 68px;
+        color: #616F75;
+        margin-bottom: 61px; }
+        body .wrapper .content .qulityBanner .bannerInfo h3 {
+          color: #2D2E30;
+          font: bold 24px/48px "MicrosoftYaHei-Bold"; }
+        body .wrapper .content .qulityBanner .bannerInfo .info1, body .wrapper .content .qulityBanner .bannerInfo h5 {
+          color: #2D2E30;
+          font: bolder 16px/52px "MicrosoftYaHei"; }
+        body .wrapper .content .qulityBanner .bannerInfo .info2 {
+          color: #5E686C;
+          margin-bottom: 20px;
+          font: normal 16px/30px "MicrosoftYaHei"; }
+        body .wrapper .content .qulityBanner .bannerInfo ul li {
+          width: 61px;
+          height: 61px;
+          float: left;
+          color: #2D2E30;
+          text-align: center;
+          border-radius: 31px;
+          border: #ccc solid 1px;
+          margin-right: 10px;
+          font: normal 14px/61px "MicrosoftYaHei"; }
+    body .wrapper .content .serviceModule {
+      width: 1200px;
+      margin: 0 auto;
+      height: 381px; }
+      body .wrapper .content .serviceModule .regularService, body .wrapper .content .serviceModule .valueaddedService, body .wrapper .content .serviceModule .serviceTeam {
+        float: left;
+        height: 275px; }
+        body .wrapper .content .serviceModule .regularService h4, body .wrapper .content .serviceModule .valueaddedService h4, body .wrapper .content .serviceModule .serviceTeam h4 {
+          padding-bottom: 22px;
+          font: bolder 16px/16px "MicrosoftYaHei"; }
+      body .wrapper .content .serviceModule .regularService, body .wrapper .content .serviceModule .valueaddedService {
+        width: 414px;
+        position: relative;
+        margin-right: 98px; }
+        body .wrapper .content .serviceModule .regularService ul, body .wrapper .content .serviceModule .valueaddedService ul {
+          width: 100%;
+          height: 238px;
+          margin-left: 53px;
+          position: relative; }
+          body .wrapper .content .serviceModule .regularService ul li.servicePic, body .wrapper .content .serviceModule .valueaddedService ul li.servicePic {
+            width: 114px;
+            height: 131px;
+            position: absolute;
+            -webkit-transform: rotate(60deg);
+            overflow: hidden; }
+            body .wrapper .content .serviceModule .regularService ul li.servicePic h3, body .wrapper .content .serviceModule .valueaddedService ul li.servicePic h3 {
+              position: absolute; }
+            body .wrapper .content .serviceModule .regularService ul li.servicePic div, body .wrapper .content .serviceModule .valueaddedService ul li.servicePic div {
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              -ms-transform: rotate(-120deg);
+              -moz-transform: rotate(-120deg);
+              -webkit-transform: rotate(-120deg); }
+              body .wrapper .content .serviceModule .regularService ul li.servicePic div a, body .wrapper .content .serviceModule .valueaddedService ul li.servicePic div a {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                -ms-transform: rotate(60deg);
+                -moz-transform: rotate(60deg);
+                -webkit-transform: rotate(60deg); }
+                body .wrapper .content .serviceModule .regularService ul li.servicePic div a img, body .wrapper .content .serviceModule .valueaddedService ul li.servicePic div a img {
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                  cursor: pointer;
+                  transition: all 0.2s; }
+                  body .wrapper .content .serviceModule .regularService ul li.servicePic div a img:hover, body .wrapper .content .serviceModule .valueaddedService ul li.servicePic div a img:hover {
+                    transform: scale(1.2); }
+                body .wrapper .content .serviceModule .regularService ul li.servicePic div a h3, body .wrapper .content .serviceModule .valueaddedService ul li.servicePic div a h3 {
+                  color: #fff;
+                  z-index: 999;
+                  top: 58px;
+                  left: 40px;
+                  font: bold 16px/24px "Microsoft YaHei";
+                  position: absolute; }
+          body .wrapper .content .serviceModule .regularService ul .servicePic1, body .wrapper .content .serviceModule .valueaddedService ul .servicePic1 {
+            left: 0;
+            top: 0; }
+          body .wrapper .content .serviceModule .regularService ul .servicePic2, body .wrapper .content .serviceModule .valueaddedService ul .servicePic2 {
+            left: 124px;
+            top: 0; }
+          body .wrapper .content .serviceModule .regularService ul .servicePic3, body .wrapper .content .serviceModule .valueaddedService ul .servicePic3 {
+            left: 248px;
+            top: 0; }
+          body .wrapper .content .serviceModule .regularService ul .servicePic4, body .wrapper .content .serviceModule .valueaddedService ul .servicePic4 {
+            left: 62px;
+            top: 107px; }
+          body .wrapper .content .serviceModule .regularService ul .servicePic5, body .wrapper .content .serviceModule .valueaddedService ul .servicePic5 {
+            left: 186px;
+            top: 107px; }
+      body .wrapper .content .serviceModule .valueaddedService {
+        width: 414px;
+        position: relative;
+        margin-right: 98px; }
+        body .wrapper .content .serviceModule .valueaddedService ul {
+          width: 100%;
+          height: 238px;
+          margin-left: 53px;
+          position: relative; }
+          body .wrapper .content .serviceModule .valueaddedService ul li.servicePic div a h3 {
+            color: #fff;
+            z-index: 999;
+            top: 42px;
+            left: 26px;
+            text-align: center;
+            font: bold 16px/24px "Microsoft YaHei";
+            position: absolute; }
+      body .wrapper .content .serviceModule .serviceTeam h2 {
+        color: #2D2E30;
+        font: bolder 24px/24px "MicrosoftYaHei";
+        margin-bottom: 30px; }
+      body .wrapper .content .serviceModule .serviceTeam h5 {
+        color: #2D2E30;
+        font: bolder 16px/28px "MicrosoftYaHei"; }
+      body .wrapper .content .serviceModule .serviceTeam ul li {
+        color: #5E686C;
+        font: normal 16px/28px "MicrosoftYaHei";
+        padding-left: 25px;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAYAAABPhbxiAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIwODhFRjg4RjY5ODExRTc4RkFERjMwQUFFNEQwREJBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIwODhFRjg5RjY5ODExRTc4RkFERjMwQUFFNEQwREJBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjA4OEVGODZGNjk4MTFFNzhGQURGMzBBQUU0RDBEQkEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjA4OEVGODdGNjk4MTFFNzhGQURGMzBBQUU0RDBEQkEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4HqDvqAAAA1ElEQVR42ozSsQsBYRjH8btzpWxWyXALZVOymU6iLDIwWixmq3/EzGYkEoN/wCSjRWS4iRAD31ePetN13VOf3rr3+d373vue6bpu3TCMJ5a4GyHLwgxNjNFDNkww4jjOi3GLGtKooggbB9mNb1CNHh7Iy/M4CmgghSvOfkFVO1kxqc9DNZRRQhQndRaW1vTGIOCzEuhgiIqtTZjoBgSPmMphenqwhdxfszq4tQQ2sqtv/YIZtLXAXprnuPgtr4Ix9OXtC0zkegLLlnsbYYVb2D/nI8AAa7wqRMlN0/IAAAAASUVORK5CYII=") no-repeat left center; }
+    body .wrapper .content .teamProcess {
+      width: 100%;
+      height: 648px;
+      background: #F6F7F7; }
+      body .wrapper .content .teamProcess .teamProcessCenter {
+        width: 1200px;
+        margin: 0 auto; }
+        body .wrapper .content .teamProcess .teamProcessCenter .teamTitle {
+          position: relative; }
+          body .wrapper .content .teamProcess .teamProcessCenter .teamTitle h1 {
+            color: #EAEBEB;
+            margin: 0 auto;
+            width: 590px;
+            font: bolder 75px/215px "MicrosoftYaHei"; }
+          body .wrapper .content .teamProcess .teamProcessCenter .teamTitle h2 {
+            color: #2D2E30;
+            margin: 0 auto;
+            width: 146px;
+            left: 50%;
+            top: 0px;
+            margin-left: -73px;
+            position: absolute;
+            font: bolder 24px/215px "MicrosoftYaHei"; }

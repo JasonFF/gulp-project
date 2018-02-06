@@ -1,0 +1,52 @@
+body .wrapper, body .wrapper .content {
+  width: 100%; }
+  body .wrapper .content {
+    min-width: 1200px;
+    max-width: 1920px;
+    background: #F6F7F7; }
+    body .wrapper .content .qulityBanner {
+      width: 100%;
+      height: 433px;
+      background: url(../img/highQulity/img_touzizhe.png) no-repeat center top; }
+    body .wrapper .content .investorDetails {
+      width: 1112px;
+      margin: 0 auto;
+      height: 100%;
+      padding: 48px 44px 0 44px; }
+      body .wrapper .content .investorDetails ul {
+        width: 100%;
+        overflow: hidden; }
+        body .wrapper .content .investorDetails ul li {
+          width: 471px;
+          height: 78px;
+          background: #ffffff;
+          float: left;
+          padding: 42px 30px;
+          margin-bottom: 22px; }
+          body .wrapper .content .investorDetails ul li .date, body .wrapper .content .investorDetails ul li .news {
+            float: left; }
+          body .wrapper .content .investorDetails ul li .date {
+            width: 71px;
+            height: 71px;
+            margin-right: 28px;
+            text-align: center;
+            color: #3496CF;
+            border: #3496CF solid 1px; }
+            body .wrapper .content .investorDetails ul li .date h1 {
+              width: 100%;
+              height: 46px;
+              font: bolder 40px/46px "MicrosoftYaHei";
+              border-bottom: #3496CF solid 1px; }
+            body .wrapper .content .investorDetails ul li .date span {
+              display: block;
+              font: normal 12px/25px "MicrosoftYaHei"; }
+          body .wrapper .content .investorDetails ul li .news {
+            width: 350px; }
+            body .wrapper .content .investorDetails ul li .news h2 {
+              color: #2D2E30;
+              font: normal 16px/24px "MicrosoftYaHei";
+              height: 58px; }
+            body .wrapper .content .investorDetails ul li .news a {
+              color: #B0B2B4; }
+        body .wrapper .content .investorDetails ul li.mgr {
+          margin-right: 50px; }

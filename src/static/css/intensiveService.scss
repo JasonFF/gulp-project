@@ -1,0 +1,69 @@
+@import "variable.scss";
+body{
+
+  .wrapper{
+    width:100%;
+    .content{
+      @extend .wrapper;
+      min-width:1200px;
+      max-width:1920px;
+      ul{
+        li{
+          width:100%;
+          height:463px;
+          .contentCenter{
+            width:1200px;
+            margin:0 auto;
+
+            .detail{
+              float: left;
+              width:698px;
+              h2{
+                font:$fontsmall;
+                position: relative;
+                font-weight:bolder;
+                color:$titleColor;
+                z-index:0;
+                padding:81px 0 57px 70px;
+                b{
+                  color:#ECECED;
+                  position: absolute;
+                  left: 0px;
+                  top: 66px;
+                  z-index: -2;
+                  font:bolder 72px/24px "SourceHanSansCN";
+                }
+              }
+              p{
+                width:698px;
+                font:$a;
+                font:$a;
+                color:#5E686C;
+              }
+            }
+            .img{
+              float: right;
+              padding-top:64px;
+            }
+
+          }
+        }
+        li.even{
+          background: #F6F7F7;
+          .contentCenter{
+            .detail{
+              float: right;
+            }
+            .img{
+              float: left;
+            }
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+}
