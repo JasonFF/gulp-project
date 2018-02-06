@@ -1,2 +1,0 @@
-# gulp-project
-gulp-project
