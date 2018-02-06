@@ -1,0 +1,79 @@
+@import './const.less';
+
+#footer {
+  width: 100%;
+  min-width: @pageWidth;
+  background-color: #3b3c3e;
+  height: 200px;
+  .footerContainer {
+    padding-top: 52px;
+    color: #eee;
+    .projectsBox {
+      float: left;
+      .projectsItem {
+        position: relative;
+        margin: 0 10px
+      }
+      .itemImgS {
+        position: absolute;
+        left: 0;
+        display: none;
+        opacity: 0;
+      }
+    }
+    .contactBox {
+      float: left;
+      margin-left: 50px;
+      .boxTitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      p {
+        line-height: 20px;
+      }
+    }
+    .linkBox {
+      float: left;
+      width: 160px;
+      margin-left: 40px;
+      .boxTitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .linkList {
+        line-height: 20px;
+        a {
+          color: #bbb;
+          display: inline-block;
+          margin-right: 5px;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .qrCodeBox {
+      float: left;
+      margin-left: 40px;
+      margin-top: -10px;
+      text-align: center;
+      .qrCode {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #2d2d2d;
+    color: #aaa;
+    .contactUs {
+      float: right;
+      a {
+        color: #aaa;
+      }
+    }
+  }
+}

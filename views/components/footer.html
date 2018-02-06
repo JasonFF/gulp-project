@@ -1,0 +1,65 @@
+<footer id="footer">
+  <div class="footerContainer pageWidth clearBoth">
+      <div class="projectsBox">
+        <a class="projectsItem" href="">
+          <img class="itemImg" src="./public/img/index_img/icon_order.png" alt="">
+          <img class="itemImgS" src="./public/img/index_img/icon_order_s.png" alt="">
+        </a>
+        <a class="projectsItem" href="">
+          <img class="itemImg" src="./public/img/index_img/icon_oa.png" alt="">
+          <img class="itemImgS" src="./public/img/index_img/icon_oa_s.png" alt="">
+        </a>
+        <a class="projectsItem" href="">
+          <img class="itemImg" src="./public/img/index_img/icon_mseqa.png" alt="">
+          <img class="itemImgS" src="./public/img/index_img/icon_mseqa_s.png" alt="">
+        </a>
+      </div>
+      <div class="contactBox">
+        <h2 class="boxTitle">美康生物科技股份有限公司</h2>
+        <p>电话：86-0574-88223000 86-0574-88223111 <br>
+          免费咨询：400-8574710 800-9574710 <br>
+          地址：浙江省宁波市鄞州区启明南路299号
+        </p>
+      </div>
+      <div class="linkBox">
+        <h3 class="boxTitle">友情链接</h3>
+        <p class="linkList">
+          <a href="">鄞州中医院</a>
+          <a href="">鄞州中医院</a>
+          <a href="">鄞州中医院</a>
+          <a href="">鄞州中医院</a>
+          <a href="">鄞州中医院</a>
+          <a href="">鄞州中医院</a>
+          <a href="">鄞州中医院</a>
+          <a href="">鄞州中医院</a>
+        </p>
+      </div>
+      <div class="qrCodeBox">
+        <div class="qrCode">
+          <img src="./public/img/index_img/img_erweima.png" alt="">
+        </div>
+        <p>扫码关注微信平台</p>
+      </div>
+  </div>
+  <div class="copyright">
+    <div class="pageWidth">
+        版权所有 ©2000-2018　美康生物科技股份有限公司 浙ICP备04654459号
+        <div class="contactUs">
+          <a href="">联系我们</a> |
+          <a href="">意见反馈</a>
+        </div>
+    </div>
+  </div>
+</footer>
+<script>
+  ;$(function(){
+  var duration = 200
+  $('.projectsItem').hover(function(){
+    var $imgs = $(this).find('.itemImgS')
+    $imgs.velocity('stop').velocity('fadeIn', duration)
+  }, function(){
+    var $imgs = $(this).find('.itemImgS')
+    $imgs.velocity('stop').velocity('fadeOut', duration)
+  })
+});
+</script>
