@@ -18,7 +18,8 @@ gulp.task('img', function () {
 
 gulp.task('jspub', function () {
   gulp.src([
-    './public/js/html.min.js'
+    './public/js/html.min.js',
+    './public/js/app.js'
   ]).pipe(gulp.dest('./dist/public/js'));
 })
 
@@ -51,7 +52,7 @@ gulp.task('js', function () {
       './bower_components/jquery/jquery.js',
       './bower_components/lodash/dist/lodash.js',
       './bower_components/velocity/velocity.min.js',
-      './public/js/jquery/SuperSlide.2.1.1.js'
+      './bower_components/swiper/dist/idangerous.swiper.js'
     ])
     .pipe(concat('main.js')) //合并所有js到main.js
     // .pipe(gulp.dest('./'))       //输出到文件夹

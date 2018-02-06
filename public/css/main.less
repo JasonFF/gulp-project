@@ -17,11 +17,11 @@ html, body {
 
 @font-face {
   font-family: 'iconfont';  /* project id 561624 */
-  src: url('//at.alicdn.com/t/font_561624_9n2hrb03a6ecdi.eot');
-  src: url('//at.alicdn.com/t/font_561624_9n2hrb03a6ecdi.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_561624_9n2hrb03a6ecdi.woff') format('woff'),
-  url('//at.alicdn.com/t/font_561624_9n2hrb03a6ecdi.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_561624_9n2hrb03a6ecdi.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_561624_tm7w2hvj9vgnl8fr.eot');
+  src: url('//at.alicdn.com/t/font_561624_tm7w2hvj9vgnl8fr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_561624_tm7w2hvj9vgnl8fr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_561624_tm7w2hvj9vgnl8fr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_561624_tm7w2hvj9vgnl8fr.svg#iconfont') format('svg');
 }
 
 .iconfont{
@@ -95,5 +95,29 @@ button {
   padding: 10px 20px;
   &:hover {
     .mk-btn
+  }
+}
+
+.pagiMk {
+  a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    &:hover {
+      background-color: @mkGreen;
+      border-color: @mkGreen;
+      color: #fff;
+    }
+    &:active {
+      background-color:@mkGreenHover;
+      border-color:@mkGreenHover;
+      color: #fff;
+    }
+    &.active {
+      background-color:@mkGreenHover;
+      border-color:@mkGreenHover;
+      color: #fff;
+    }
   }
 }
