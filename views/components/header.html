@@ -1,0 +1,104 @@
+<header class="header">
+  <div class="headerContainer">
+      <div class="headerBox pageWidth clearBoth">
+          <div class="logoBox">
+            <img src="./public/img/index_img/img_logo.png" alt="">
+          </div>
+          <nav class="nav">
+            <ul class="clearBoth">
+              <li>
+                <a id="enterMK" href="javascript:void(0)">走进美康</a>
+              </li>
+              <li><a href="">生命·阳光</a></li>
+              <li><a href="">产品&集约化服务方案</a></li>
+              <li><a href="">优质服务</a></li>
+              <li><a href="">人力资源</a></li>
+              <li><a href="">投资者关系</a></li>
+            </ul>
+          </nav>
+          <div class="searchBox">
+            <ul>
+              <li id="searchDropdownBox">
+                <i class="iconfont">&#xe600;</i>
+                <div id="searchDropdown">
+                  <div class="inputBox">
+                      <input></input>
+                      <button>搜索</button>
+                  </div>
+                </div>
+              </li>
+              <li id="pmDropdownBox">
+                <i class="iconfont">&#xe60e;</i>
+                <div id="pmDropdown">
+                  <dl>
+                    <dt><a href="">OA</a></dt>
+                    <dt><a href="">SPD</a></dt>
+                    <dt><a href="">CRM</a></dt>
+                    <dt><a href="">集采平台</a></dt>
+                    <dt><a href="">MSEQI</a></dt>
+                    <dt><a href="">订货</a></dt>
+                  </dl>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+  </div>
+  <div id="subHeaderContainer">
+      <ul class="clearBoth subHeader pageWidth">
+        <li><a href="">公司简介</a></li>
+        <li><a href="">企业文化</a></li>
+        <li><a href="">发展历程</a></li>
+        <li><a href="">合作共赢</a></li>
+        <li><a href="">国内市场</a></li>
+        <li><a href="">国际市场</a></li>
+        <li><a href="">社会责任</a></li>
+      </ul>
+  </div>
+  
+</header>
+<script>
+  ;$(function() {
+  var duration = 200;
+  var hoverBeforeId = '';
+  $('#enterMK').hover(function(e){
+    $('#subHeaderContainer').velocity('stop').velocity({
+      opacity: 1,
+      height: 80,
+    }, duration)
+  }, function(e) {
+    $('#subHeaderContainer').velocity('stop').velocity({
+      opacity: 0,
+      height: 0,
+    }, duration)
+  })
+  $('#subHeaderContainer').hover(function(e){
+    $('#subHeaderContainer').velocity('stop').velocity({
+      opacity: 1,
+      height: 80,
+    }, duration)
+  }, function(e) {
+    $('#subHeaderContainer').velocity('stop').velocity({
+      opacity: 0,
+      height: 0,
+    }, duration)
+  })
+});
+$(function() {
+  var duration = 200
+  $('#pmDropdownBox').hover(function(e){
+    $('#pmDropdown').velocity('stop').velocity('fadeIn', duration)
+  }, function(e) {
+    $('#pmDropdown').velocity('stop').velocity('fadeOut', duration)
+  })
+});
+$(function() {
+  var duration = 200
+  $('#searchDropdownBox').hover(function(e){
+    $('#searchDropdown').velocity('stop').velocity('fadeIn', duration)
+  }, function(e) {
+    $('#searchDropdown').velocity('stop').velocity('fadeOut', duration)
+  })
+});
+
+</script>

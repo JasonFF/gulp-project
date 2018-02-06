@@ -1,0 +1,173 @@
+{% extends "root.html" %} {% block main %}
+<div class="indexContainer">
+  <div class="bannerContainer">
+    <div id="swiperContainer">
+      <div class="swiperBox">
+        <div class="swiperPage"></div>
+        <div class="swiperPage"></div>
+        <div class="swiperPage"></div>
+        <div class="swiperPage"></div>
+      </div>
+      <div class="newsBanner">
+        <div class="pageWidth clearBoth">
+          <div class="newsBox">
+            <ul class="newsList">
+              <li class="newsItem"><a href="">【新闻资讯】 美康生物首批产品获美国FDA市场准入许可 ——匠人精神拓展国际化市场1 <span class="itemTime">22/06</span></a></li>
+              <li class="newsItem"><a href="">【新闻资讯】 美康生物首批产品获美国FDA市场准入许可 ——匠人精神拓展国际化市场1 <span class="itemTime">22/06</span></a></li>
+              <li class="newsItem"><a href="">【新闻资讯】 美康生物首批产品获美国FDA市场准入许可 ——匠人精神拓展国际化市场1 <span class="itemTime">22/06</span></a></li>
+              <li class="newsItem"><a href="">【新闻资讯】 美康生物首批产品获美国FDA市场准入许可 ——匠人精神拓展国际化市场1 <span class="itemTime">22/06</span></a></li>
+            </ul>
+          </div>
+          <div class="swiperBtns">
+            <ul>
+              <li class="swiperBtn"></li>
+              <li class="swiperBtn"></li>
+              <li class="swiperBtn"></li>
+              <li class="swiperBtn"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="imageIndexContainer pageWidth" style="width: 1500px; margin-top: 20px">
+    <div class="clearBoth" style="margin-bottom: 20px">
+        <a class="fl imgItem" style="margin-right:20px;width:818px;height:512px;" href="">
+          <img src="./public/img/index_img/img_shenming.png" alt="">
+          <div class="textBox textBox1">
+            <h1>生命 阳光</h1>
+            <h2>BRAND CULTURE</h2>
+            <div style="margin-top: 130px;text-align: right;color:#ddd;line-height: 30px;">
+              美康品牌文化<br>
+              查看详情 >>
+            </div>
+          </div>
+        </a>
+        <a class="fl imgItem" href="" style="width:606px;height:509px">
+          <img src="./public/img/index_img/img_videocenter.png" alt="">
+          <div class="textBox textBox1">
+              <div style="margin-top: 30px;text-align: right;color:#fff;line-height: 30px;">
+                企业视频简介<br>
+                查看详情 >>
+              </div>
+              <h1 style="margin-top: 230px; font-size:2em">视频中心</h1>
+              <h2 style="font-size:2em">VIDEO CENTER</h2>
+            </div>
+        </a>
+    </div>
+    <div class="clearBoth" style="margin-bottom: 20px">
+        <a class="fl imgItem" style="margin-right: 20px;width:568px;height:613px" href="" >
+          <img src="./public/img/index_img/img_productservice.png" alt="">
+          <div class="textBox textBox1">
+            <h1 style="text-align:left;font-size:2em;position:relative; z-index:3">产品&集约化服务方案</h1>
+            <h2 style="text-align:left;font-size:5em;position: relative;top:-100px;z-index:2;color:#666;opacity:0.4">PRODUCT <br> SERVICES</h2>
+            <div style="margin-top: 130px;text-align: left;color:#ddd;line-height: 30px;">
+              <button class="mk-btn">了解更多</button>
+            </div>
+          </div>
+        </a>
+        <div class="fl" style="width: 861px;">
+          <div class="fl">
+              <a class="imgItem" href="" style="width:428px;height:307px;">
+                <img src="./public/img/index_img/img_yiqi.png" alt="">
+                <div class="textBox textBox2">
+                  <h3>仪器诊断</h3>
+                  <p>EasyStat电解质血气分析仪</p>
+                  <div style="margin-top: 120px">
+                    查看详情 <i class="iconfont">&#xe6a4;</i>
+                  </div>
+                </div>
+              </a>
+              <a class="imgItem" href="" style="width:428px;height:307px;">
+                <img src="./public/img/index_img/MK6_03.png" alt="">
+              </a>
+          </div>
+            <div class="fl">
+                <a class="imgItem" href="" style="width:428px;height:307px;">
+                  <img src="./public/img/index_img/MK6_06.png" alt="">
+                </a>
+                <a class="imgItem" href="" style="width:428px;height:307px;">
+                  <img src="./public/img/index_img/img_shiji.png" alt="">
+                  <div class="textBox textBox2">
+                      <h3>试剂诊断</h3>
+                      <p>EasyStat电解质血气分析仪</p>
+                      <div style="margin-top: 120px">
+                       <i class="iconfont">&#xe695;</i> 查看详情
+                      </div>
+                  </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+{% endblock %} {% block js%}
+
+<script type="text/javascript">
+  $(function () {
+    var showIndex = 1
+    function show(index) {
+      $('.swiperPage').css({
+        display: 'none'
+      })
+      $('.swiperPage').eq(index).velocity('fadeIn')
+      $('.swiperBtn').removeClass('active')
+      $('.swiperBtn').eq(index).addClass('active')
+    };
+
+    show(0);
+
+    $('.swiperBtn').on('click', function(e){
+      showIndex = $(this).index()
+      show(showIndex)
+    })
+    setInterval(function(){
+      show(showIndex)
+      showIndex ++;
+      if(showIndex == 4) {
+        showIndex = 0
+      }
+    }, 4000)
+  });
+  $(function () {
+    var showItem = 1;
+    var timer = setInterval(function(){
+      $('.newsList').velocity({
+        marginTop: -1 * showItem * 30 + 'px'
+      }, 300);
+      showItem++;
+      if(showItem == 4) {
+        showItem = 0
+      }
+    }, 5000)
+  });
+  $(function(){
+    $('.imgItem').hover(function(){
+      $(this).find('img').velocity('stop').velocity({
+        width: '120%',
+        height: '120%',
+        marginLeft: '-10%',
+        marginTop: '-10%',
+      }, 300)
+      $(this).find('.textBox').velocity('stop').velocity({
+        fontSize: '18px'
+      }, 300)
+    }, function(){
+      $(this).find('img').velocity('stop').velocity({
+        width: '100%',
+        height: '100%',
+        marginLeft: '0%',
+        marginTop: '0%',
+      }, 300)
+      $(this).find('.textBox').velocity('stop').velocity({
+        fontSize: '16px'
+      }, 300)
+    })
+  })
+</script>
+
+{% endblock %}

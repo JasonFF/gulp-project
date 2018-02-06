@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>美康生物</title>
+  <!–[if lt IE 9]> 
+    <script src="./public/js/html.min.js"></script>
+  <![endif]–>
+  <link rel="stylesheet" href="./public/main.min.css">
+  <script src="./public/main.min.js"></script>
+</head>
+<body id="body">
+  {% include "components/header.html" %}
+  <main>
+    {% block main %}
+      root main
+    {% endblock %}
+  </main>
+  {% include "components/footer.html" %}
+  
+  {% block js %}
+  {% endblock %}
+</body>
+</html>
