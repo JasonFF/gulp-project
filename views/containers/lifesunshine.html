@@ -1,0 +1,103 @@
+{% extends "root.html" %} {% block main %}
+<div class="lifesunshineContainer">
+  <div class="banner">
+    <img src="/public/img/life/img_logo.png" alt="">
+    <p>
+      “十”字图案由四个“M”组成，为“美康”的拼音和英文“Medicalsystem”的首字母，代表美康公司。
+      <br> 四个“M”又像四扇大门，分指八个方向，且内外围都是相连的“人”字，寓意美康人团结一致，与世界携手，通达四方。
+      <br> 同时，又象征着美康如海纳百川，聚四面之才，结八方之友，凝聚在中心闪耀的阳光下，整个标志如含苞待放的生命之花，结合绿色的背景，体现了“生命、阳光、美康”的标志语。
+    </p>
+  </div>
+  <section class="section1 clearBoth">
+    <div class="pageWidth">
+      <div class="leftBox">
+        <h1>
+          <img src="/public/img/life/img_text_ppwh.png" alt="">
+        </h1>
+        <ul class="storyList">
+          <li>经商创业，“非典”成就梦想</li>
+          <li>十年创新研发，孕育出一匹体外诊断“黑马”</li>
+          <li>公司成功上市</li>
+          <li>关注百姓，热衷公益</li>
+        </ul>
+      </div>
+      <div class="rightBox">
+        <ul class="storyContentList">
+          <li>
+            >> 1公司成立之初就因为全新的创业理念而得到了一些投资方的青睐，资金问题很快得到了落实。再加上“非典”之后医疗理念革新的契机，美康生物起步迅速。经过研发人员的日夜奋战，美康生物一投产便推出了３０多种试剂，各大医疗机构临床试验后发现，美康产品在质量上毫不逊色于进口产品，而价格却远低于进口产品，由此，美康生物的牌子一炮走红。
+          </li>
+          <li>
+            >> 2公司成立之初就因为全新的创业理念而得到了一些投资方的青睐，资金问题很快得到了落实。再加上“非典”之后医疗理念革新的契机，美康生物起步迅速。经过研发人员的日夜奋战，美康生物一投产便推出了３０多种试剂，各大医疗机构临床试验后发现，美康产品在质量上毫不逊色于进口产品，而价格却远低于进口产品，由此，美康生物的牌子一炮走红。
+          </li>
+          <li>
+            >> 3公司成立之初就因为全新的创业理念而得到了一些投资方的青睐，资金问题很快得到了落实。再加上“非典”之后医疗理念革新的契机，美康生物起步迅速。经过研发人员的日夜奋战，美康生物一投产便推出了３０多种试剂，各大医疗机构临床试验后发现，美康产品在质量上毫不逊色于进口产品，而价格却远低于进口产品，由此，美康生物的牌子一炮走红。
+          </li>
+          <li>
+            >> 4公司成立之初就因为全新的创业理念而得到了一些投资方的青睐，资金问题很快得到了落实。再加上“非典”之后医疗理念革新的契机，美康生物起步迅速。经过研发人员的日夜奋战，美康生物一投产便推出了３０多种试剂，各大医疗机构临床试验后发现，美康产品在质量上毫不逊色于进口产品，而价格却远低于进口产品，由此，美康生物的牌子一炮走红。
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section2">
+    <div class="pageWidth">
+        <div class="content">
+          <h1>携手美康</h1>
+          <p>分公司物公司网站，分公司感谢您分公司这些分公司年来对美！分公司物公司网站，分公司感谢您分公司这些分公司年时光荏苒，白驹过隙，美康生物走过了10余载。自2003年成立以来，美康生物从一个单...</p>
+        </div>
+    </div>
+  </section>
+  <section class="section3">
+      <div class="pageWidth clearBoth">
+          <div class="leftBox">
+            <h1>与医学检验同行</h1>
+            <p>学术会议</p>
+            <img src="/public/img/life/img_xueshuhuiyi.png" alt="">
+          </div>
+          <div class="midBox">
+            <h3>参与了4部医学检验教材的编写</h3>
+            <p>
+                1) 参与全国高等学校“十二五”医学规划教材《临床实验室管理学》教材编写工作（高等教育出版社）。<br>
+                2) 参与全国高等医药院校规划教材《临床生物化学检验实验指导》编写工作（中国医药科技出版社）。<br>
+                3) 参与人民卫生出版社主办，美康生物承办的《区域临床检验与病理规范教程》编写。<br>
+                4) 《临床检验装备大全》、《试剂与耗材》（上册）作为副主编者。
+            </p>
+          </div>
+          <div class="rightBox">
+              <img src="/public/img/life/img_book1.png" alt="">
+              <img src="/public/img/life/img_book2.png" alt="">
+              <img src="/public/img/life/img_book3.png" alt="">
+          </div>
+      </div>
+    </section>
+</div>
+{% endblock %} {% block js%}
+
+<script type="text/javascript">
+  ;
+  $(function () {
+    var $storyList = $('.storyList');
+    var $contentList = $('.storyContentList');
+    var activeIndex = 0;
+
+    function init() {
+      $storyList.find('li').removeClass('active')
+      $contentList.find('li').removeClass('active')
+    }
+
+    function activeStory() {
+      init()
+      $storyList.find('li').eq(activeIndex).addClass('active')
+      $contentList.find('li').eq(activeIndex).addClass('active')
+    }
+    $storyList.find('li').on('click', function (e) {
+      activeIndex = $(this).index()
+      activeStory()
+    })
+
+    activeStory()
+
+  });
+</script>
+
+{% endblock %}

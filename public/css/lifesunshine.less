@@ -1,0 +1,150 @@
+@import './const.less';
+
+.lifesunshineContainer {
+  .banner {
+    position: relative;
+    z-index: 9;
+    height: 470px;
+    background: url('/public/img/life/img_ppwh.png') center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 68px;
+    p {
+      margin-top: 30px;
+      line-height: 30px;
+      color: #fff;
+    }
+  }
+  .section1 {
+    background: url('/public/img/life/img_ppwh1.png') center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: -70px;
+    .leftBox {
+      float: left;
+      width: 50%;
+      padding-top: 40px;
+      padding-right: 50px;
+    }
+    .storyList {
+      list-style: none;
+      border: 1px solid #ccc;
+      li {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 30px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+        &:last-child {
+          border-bottom: 0;
+        }
+        &:hover, &.active {
+          background: linear-gradient(to right, #259C8F, #61CB48);
+          color: #fff;
+        }
+      }
+    }
+
+    .rightBox {
+      float: left;
+      width: 50%;
+      padding-top: 100px;
+      padding-left: 50px;
+    }
+    .storyContentList {
+      list-style: none;
+      li {
+        line-height: 30px;
+        color: #555;
+        display: none;
+        &.active {
+          display: block
+        }
+      }
+    }
+  }
+  .section2 {
+    height: 380px;
+    background: url('/public/img/life/img_ppwh_hand.png') center no-repeat;
+    background-size: cover;
+    .content {
+      padding-top: 80px;
+      float: right;
+      width: 50%;
+      p {
+        line-height: 30px;
+        color: #999;
+      }
+    }
+  }
+  .section3 {
+    padding: 50px 0;
+    background: #f6f6f6;
+    .leftBox {
+      float: left;
+      width: 30%;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    .midBox {
+      float: left;
+      width: 50%;
+      padding: 50px 30px 0;
+      h3 {
+        font-weight: normal;
+        margin-bottom: 30px;
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+    .rightBox {
+      float: left;
+      width: 20%;
+      padding-top: 30px;
+    }
+  }
+}
+.brandstoryContainer {
+  padding: 60px 0;
+  .contentBox {
+    float: left;
+    width: 70%;
+    padding-right: 50px;
+    .contentItem {
+      margin-bottom: 88px;
+      h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      p {
+        line-height: 30px;
+        color: #666;
+        &::first-letter {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  .contentList {
+    float: left;
+    width: 30%;
+    h3 {
+      span {
+        color: #ED8618;
+        font-size: 1.3em;
+        margin-right: 5px;
+      }
+    }
+    ul {
+      margin-top: 30px;
+      list-style-position: inside;
+      li {
+        height: 40px;
+        line-height: 40px;
+        color: #999;
+      }
+    }
+  }
+}

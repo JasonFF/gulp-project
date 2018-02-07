@@ -1,0 +1,292 @@
+@import './const.less';
+
+.closetomkContainer {
+  .banner {
+    position: relative;
+    z-index: 9;
+    height: 470px;
+    background: url('/public/img/closetomk/bg_zjmk.png') center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 68px;
+    .textBox {
+      position:relative;
+      width: 800px;
+      margin: 30px auto;
+      line-height: 30px;
+      color: #fff;
+      .topBorder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: 3px solid #fff;
+        border-top: 3px solid #fff;
+        width: 10px;
+        height: 10px;
+      }
+      .bottomBorder {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-right: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        width: 10px;
+        height: 10px;
+      }
+    }
+    button {
+      color: #71A1B3;
+      background: #eee;
+      width: 100px;
+      height: 30px;
+      border-radius: 30px;
+      &:hover {
+        background: #fff
+      }
+    }
+  }
+  .section1 {
+    background: url('/public/img/closetomk/bg_zjmk_hezuo.png') center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: -70px;
+    .leftBox {
+      float: left;
+      width: 50%;
+      padding-top: 100px;
+      padding-right: 50px;
+      p {
+        color: #999;
+        line-height: 30px;
+      }
+      button {
+        margin-top: 50px;
+      }
+    }
+  }
+  .section2 {
+    width: 100%;
+    height: 470px;
+    .leftBox {
+      float: left;
+      width: 50%;
+      height: 100%;
+      background: url('/public/img/closetomk/bg_zjmk_culture.png') center no-repeat;
+      background-size: cover;
+      padding: 100px 0 0 12%;
+      color: #fff;
+      line-height: 30px;
+      font-size: 16px;
+      .btnBox {
+        margin-top: 30px;
+      }
+      button {
+        border-color: #ddd;
+        color: #ddd;
+      }
+    }
+    .rightBox {
+      float: left;
+      width: 50%;
+      height: 100%;
+      background: url('/public/img/closetomk/bg_zjmk_video.png') center no-repeat;
+      background-size: cover;
+      padding-top: 150px;
+      .videoBox {
+        padding-left: 30%;
+        img {
+          float: left;
+        }
+        .titleBox {
+          color: #fff;
+          float: left;
+          padding-top: 30px;
+          padding-left: 30px;
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  .section3 {
+    background: #eaeaea;
+    padding: 100px 0;
+    .pageWidth {
+      height: 100%;
+    }
+    .developRoad {
+      position: relative;
+      height: 100%;
+      .slideBtn {
+        position: absolute;
+        top: 50px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #aaa;
+        line-height: 28px;
+        text-align: center;
+        color: #aaa;
+        border-radius: 30px;
+        user-select: none;
+        cursor: pointer;
+        &:hover {
+          color: #666;
+        }
+        &:active {
+          color: #333;
+          border-color: #666;
+        }
+      }
+      .leftBtn {
+        left: -50px;
+      }
+      .rightBtn {
+        right: -50px;
+      }
+      .maskBox {
+        width:1200px;
+        height: 100%;
+        overflow: hidden;
+      }
+      ul {
+        list-style: none;
+        white-space: nowrap;
+        li {
+          float: left;
+          width: 180px;
+          text-align: center;
+          white-space: normal;
+          .timeBox {
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #aaa;
+            font-size: 20px;
+            font-weight: blod;
+            color: #666;
+            
+          }
+          .point {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background: #666;
+            position: relative;
+            top: -8px;
+          }
+          .content {
+            padding: 10px;
+            color: #999;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+    .btnBox {
+      margin: 50px 0;
+      text-align: center
+    }
+    button {
+      border-color: #666;
+      color: #666;
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+  .section4 {
+    height: 400px;
+    .imgBox {
+      padding-top: 50px;
+      float: left;
+      width: 50%;
+    }
+    .leftBox {
+      float: left;
+      width: 50%;
+      padding-top: 100px;
+      padding-right: 50px;
+      p {
+        color: #999;
+        line-height: 30px;
+      }
+      button {
+        margin-top: 50px;
+      }
+    }
+  }
+  .section5 {
+    background-color: #383D41;
+    padding: 50px 0;
+    text-align: center;
+    h1 {
+      color: #eee;
+    }
+    .swiper-container {
+      height: 300px;
+      color: #fff;
+    }
+    .imgBox {
+      padding: 0 20px;
+      img {
+        width: 100%;
+      }
+    }
+    .slideBox {
+      position: relative
+    }
+    .swiperBtn {
+      position: absolute;
+      top: 70px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #aaa;
+      line-height: 28px;
+      text-align: center;
+      color: #aaa;
+      border-radius: 30px;
+      user-select: none;
+      cursor: pointer;
+      &:hover {
+        color: #666;
+      }
+      &:active {
+        color: #333;
+        border-color: #666;
+      }
+    }
+    .swleftBtn {
+      left: -50px;
+    }
+    .swrightBtn {
+      right: -50px;
+    }
+  }
+  .section6 {
+    height: 600px;
+    background: #f6f7f7;
+    .imgBox {
+      padding-top: 50px;
+      float: left;
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .leftBox {
+      float: left;
+      width: 50%;
+      padding-top: 150px;
+      padding-left: 50px;
+      p {
+        color: #999;
+        line-height: 30px;
+      }
+      button {
+        margin-top: 50px;
+      }
+    }
+  }
+}

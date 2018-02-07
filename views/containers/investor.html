@@ -1,0 +1,94 @@
+{% extends "root.html" %} {% block main %}
+<div class="investorContainer">
+  <div class="banner"></div>
+  <div class="itemList pageWidth">
+    <ul class="clearBoth">
+      <li>
+        <a href="" class="itemBox">
+          <div class="leftBox">
+              <div class="timeBox">
+                  <div class="date">12</div>
+                  <div class="month">2018-01</div>
+                </div>
+          </div>
+          <div class="itemContent">
+            <h2>美康生物：2017年第一次临时股东大会决议公告</h2>
+            <p>查看详情 >> </p>
+          </div>
+        </a>
+      </li>
+      <li>
+          <a href="" class="itemBox">
+            <div class="leftBox">
+                <div class="timeBox">
+                    <div class="date">12</div>
+                    <div class="month">2018-01</div>
+                  </div>
+            </div>
+            <div class="itemContent">
+              <h2>美康生物：2017年第一次临时股东大会决议公告</h2>
+              <p>查看详情 >> </p>
+            </div>
+          </a>
+        </li>
+        <li>
+            <a href="" class="itemBox">
+              <div class="leftBox">
+                  <div class="timeBox">
+                      <div class="date">12</div>
+                      <div class="month">2018-01</div>
+                    </div>
+              </div>
+              <div class="itemContent">
+                <h2>美康生物：2017年第一次临时股东大会决议公告</h2>
+                <p>查看详情 >> </p>
+              </div>
+            </a>
+          </li>
+          <li>
+              <a href="" class="itemBox">
+                <div class="leftBox">
+                    <div class="timeBox">
+                        <div class="date">12</div>
+                        <div class="month">2018-01</div>
+                      </div>
+                </div>
+                <div class="itemContent">
+                  <h2>美康生物：2017年第一次临时股东大会决议公告</h2>
+                  <p>查看详情 >> </p>
+                </div>
+              </a>
+            </li>
+    </ul>
+    <div class="paginationContainer pageWidth">
+        <div class="pagiMk">
+          <a href=""> < </a>
+          <a href=""> ... </a>
+          <a href=""> 1 </a>
+          <a href=""> 2 </a>
+          <a class="active" href=""> 3 </a>
+          <a href=""> 4 </a>
+          <a href=""> 5 </a>
+          <a href=""> ... </a>
+          <a href=""> > </a>
+        </div>
+        <div class="jumpTo">
+          <input class="jumpToInput" type="text">
+          <button  class="mk-btn jumpToBtn">跳转</button>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %} {% block js%}
+
+<script type="text/javascript">
+$(function() {
+  var pagiMk = new window.PagiMk('.pagiMk')
+  pagiMk.init({
+    total: 100,
+    index: 1
+  })
+})
+</script>
+
+{% endblock %}
