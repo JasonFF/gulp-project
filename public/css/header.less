@@ -23,12 +23,13 @@
         li {
           height:100%;
           float: left;
-          margin: 0 20px;
+          margin: 0 30px;
           line-height: 100px;
           cursor: pointer;
-          &:hover {
+          &:hover, &.active {
             a {
-              color: @mkGreenHover
+              color: @mkGreenHover;
+              font-weight: bold;
             }
           }
         }
@@ -137,7 +138,7 @@
       }
     }
   }
-  #subHeaderContainer {
+  .subHeaderContainer {
     position: absolute;
     top: 100px;
     width: 100%;
@@ -147,18 +148,39 @@
     opacity: 0;
     z-index: 98;
     overflow: hidden;
+    text-align: center;
     ul {
       list-style: none;
       li {
-        float: left;
+        display: inline-block;
         margin: 0 40px;
       }
     }
     a {
       color: #333;
       &:hover {
-        color: @mkGreenHover
+        color: @mkGreenHover;
+        font-weight: bold;
+      }
+    }
+    &#sub3 {
+      text-align: left;
+      line-height: 30px;
+      
+      li {
+        margin: 0;
+        float: left;
+        width: 25%;
+        &>a {
+          display: inline-block;
+          margin-top: 20px;
+          font-weight: bold;
+        }
+      }
+      p {
+        font-size: 14px;
       }
     }
   }
+  
 }

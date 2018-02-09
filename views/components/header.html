@@ -7,13 +7,13 @@
           <nav class="nav">
             <ul class="clearBoth">
               <li>
-                <a id="enterMK" href="javascript:void(0)">走进美康</a>
+                <a id="nav1" href="javascript:void(0)">走进美康</a>
               </li>
-              <li><a href="">生命·阳光</a></li>
-              <li><a href="">产品&集约化服务方案</a></li>
-              <li><a href="">优质服务</a></li>
-              <li><a href="">人力资源</a></li>
-              <li><a href="">投资者关系</a></li>
+              <li><a id="nav2" href="javascript:void(0)" href="">生命<span style="display:inline-block;width:8px;text-align:center">·</span>阳光</a></li>
+              <li><a id="nav3" href="javascript:void(0)" href="">产品<span style="display:inline-block;width:1px;text-align:center"></span>&集约化服务方案</a></li>
+              <li><a id="nav4" href="">优质服务</a></li>
+              <li><a id="nav5" href="">人力资源</a></li>
+              <li><a id="nav6" href="">投资者关系</a></li>
             </ul>
           </nav>
           <div class="searchBox">
@@ -44,7 +44,7 @@
           </div>
         </div>
   </div>
-  <div id="subHeaderContainer">
+  <div id="sub1" class="subHeaderContainer" >
       <ul class="clearBoth subHeader pageWidth">
         <li><a href="">公司简介</a></li>
         <li><a href="">企业文化</a></li>
@@ -55,34 +55,114 @@
         <li><a href="">社会责任</a></li>
       </ul>
   </div>
+  <div id="sub2" class="subHeaderContainer">
+    <ul class="clearBoth subHeader pageWidth">
+      <li><a href="">品牌故事</a></li>
+      <li><a href="">LOGO诠释</a></li>
+      <li><a href="">携手美康</a></li>
+      <li><a href="">与检验医学同行</a></li>
+    </ul>
+</div>
+<div id="sub3" class="subHeaderContainer">
+  <ul class="clearBoth subHeader pageWidth">
+    <li>
+      <a>体外诊断</a>
+      <p>
+        诊断试剂：<br>
+        <a href="">生化试剂</a>、
+        <a href="">质控校准</a>、
+        <a href="">血球相关试剂</a>
+      </p>
+      <p>
+          诊断仪器：<br>
+          <a href="">POCT系列（SMART 、FP-100介绍）</a><br>
+          <a href="">血液分析系列</a><br>
+          <a href="">慢病管理解决方案</a>
+        </p>
+    </li>
+    <li>
+      <a href="">第三方医学检验服务</a>
+    </li>
+    <li>
+      <a>集约化服务方案</a>
+      <p>
+          <a href="">冷链物流</a><br>
+          <a href="">信息区域LIS</a><br>
+          <a href="">实验室管理体系：15189</a><br>
+          <a href="">质量管理提升计划</a><br>
+          <a href="">病理诊断</a><br>
+          <a href="">基因诊断</a><br>
+          <a href="">溯源体系</a><br>
+          <a href="">研发、生产、质量管理实力</a>
+        </p>
+    </li>
+    <li>
+      <a href="">个人健康管理</a>
+    </li>
+  </ul>
+</div>
+<div id="sub4" class="subHeaderContainer">
+  <ul class="clearBoth subHeader pageWidth">
+    <li><a href="">服务理念</a></li>
+    <li><a href="">服务方案</a></li>
+    <li><a href="">联系我们</a></li>
+    <li><a href="">技术资讯</a></li>
+    <li><a href="">培训平台</a></li>
+    <li><a href="">在线咨询</a></li>
+  </ul>
+</div>
+<div id="sub5" class="subHeaderContainer">
+  <ul class="clearBoth subHeader pageWidth">
+    <li><a href="">人才战略</a></li>
+    <li><a href="">人才招聘</a></li>
+    <li><a href="">人在美康</a></li>
+  </ul>
+</div>
+<div id="sub6" class="subHeaderContainer">
+  <ul class="clearBoth subHeader pageWidth">
+    <li><a href="">信息披露</a></li>
+  </ul>
+</div>
   
 </header>
 <script>
   ;$(function() {
-  var duration = 200;
-  var hoverBeforeId = '';
-  $('#enterMK').hover(function(e){
-    $('#subHeaderContainer').velocity('stop').velocity({
-      opacity: 1,
-      height: 80,
-    }, duration)
-  }, function(e) {
-    $('#subHeaderContainer').velocity('stop').velocity({
-      opacity: 0,
-      height: 0,
-    }, duration)
-  })
-  $('#subHeaderContainer').hover(function(e){
-    $('#subHeaderContainer').velocity('stop').velocity({
-      opacity: 1,
-      height: 80,
-    }, duration)
-  }, function(e) {
-    $('#subHeaderContainer').velocity('stop').velocity({
-      opacity: 0,
-      height: 0,
-    }, duration)
-  })
+    function initHeader(index, height) {
+      var height = height || 80;
+      var duration = 200;
+      var hoverBeforeId = '';
+      var $nav = $('#nav'+index)
+      var $sub = $('#sub'+index)
+      $nav.hover(function(e){
+        
+        $sub.velocity('stop').velocity({
+          opacity: 1,
+          height: height,
+        }, duration)
+      }, function(e) {
+        
+        $sub.velocity('stop').velocity({
+          opacity: 0,
+          height: 0,
+        }, duration)
+      })
+      $sub.hover(function(e){
+        $nav.parent().addClass('active')
+        $sub.velocity('stop').velocity({
+          opacity: 1,
+          height: height,
+        }, duration)
+      }, function(e) {
+        $nav.parent().removeClass('active')
+        $sub.velocity('stop').velocity({
+          opacity: 0,
+          height: 0,
+        }, duration)
+      })
+    }
+  for (var i = 1; i < 7; i++) {
+    initHeader(i, i==3&&300)
+  }
 });
 $(function() {
   var duration = 200

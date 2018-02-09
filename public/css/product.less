@@ -1,0 +1,289 @@
+@import './const.less';
+
+
+.productContainer {
+  .banner1 {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    overflow: hidden;
+    background: url('/public/img/products/bg_product.png') center no-repeat;
+    background-size: cover;
+    .textBox{
+      position: absolute;
+      top: 80px;
+      left: 18%;
+      color: #666;
+      line-height: 40px;
+    }
+    .linkList {
+      margin-top: 20px;
+      a {
+        position: relative;
+        display: inline-block;
+        color: #288FA9;
+        border-right: 1px solid #288FA9;
+        line-height: 20px;
+        height: 20px;
+        padding: 0 35px 0 60px;
+        &:last-child {
+          border: none;
+        }
+        img {
+          position: absolute;
+          left: 25px;
+          top: -5px;
+        }
+      }
+    }
+
+  }
+  .section2 {
+    padding: 50px 0;
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .productItem {
+      float: left;
+      width: 25%;
+      padding: 20px 70px;
+      text-align: center;
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .section4 {
+    padding: 100px 0;
+    .headerBox {
+      position: relative;
+      text-align: center;
+      margin-bottom: 50px;
+      span {
+        position: relative;
+        display: inline-block;
+        background-color: #fff;
+        padding: 10px 30px;
+      }
+    }
+    .dashBox {
+      position: absolute;
+      width: 100%;
+      border-top: 2px dashed #ddd;
+      top: 25px;
+    }
+    .contentBox {
+      .leftBox {
+        float: left;
+        width: 33.33%;
+        padding: 60px 20px 0 0;
+        h1 {
+          font-weight: normal;
+        }
+        .textBox {
+          margin-top: 50px;
+          span {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #6B8DC5;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50px;
+            color: #6B8DC5;
+            margin-right: 20px;
+          }
+        }
+        .infoList {
+          list-style-position: inside;
+          color: #666;
+          margin-top: 30px;
+          li {
+            margin: 30px 0;
+          }
+        }
+      }
+      .rightBox {
+        float: left;
+        width: 66.66%;
+        .imgBox {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .section5 {
+    padding: 50px 0;
+    h1 {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .swiperContainer {
+      position: relative;
+      
+      .swiper-container {
+        height: 500px;
+      }
+      .imgBox {
+        text-align: center;
+        img {
+          height: 100%;
+        }
+      }
+      .swiperBtn {
+        position: absolute;
+        top: 100px;
+        width: 50px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        color: #aaa;
+        user-select: none;
+        cursor: pointer;
+        i {
+          font-size: 30px;
+        }
+        &:hover {
+          color: #666;
+          background: #eee;
+        }
+        &:active {
+          color: #333;
+          border-color: #666;
+        }
+      }
+      .swleftBtn {
+        left: -60px;
+      }
+      .swrightBtn {
+        right: -60px;
+      }
+    }
+  }
+  .section6 {
+    background: url('/public/img/products/bg_manbing.png') center no-repeat;
+    background-size: cover;
+      height: 400px;
+      .imgBox {
+        padding-top: 50px;
+        float: left;
+        width: 50%;
+      }
+      .leftBox {
+        float: left;
+        width: 50%;
+        padding-top: 100px;
+        padding-right: 50px;
+        h3 {
+          color: #999;
+
+        }
+        p {
+          color: #999;
+          line-height: 30px;
+        }
+        button {
+          margin-top: 50px;
+        }
+        .videoLink {
+          margin-top: 30px;
+          img {
+            position:relative;
+            top: 3px;
+            margin-right: 10px;
+          }
+          a {
+            color: #16628F;
+            &:hover {
+              text-decoration: underline
+            }
+          }
+        }
+      }
+  }
+  .section7 {
+    height: 400px;
+    background: url('/public/img/products/bg_product_shiji.png') center no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    .productItem {
+      float: left;
+      width: 33.33%;
+      text-align: center;
+      h3 {
+        margin-top: 30px;
+        color: #fff;
+      }
+      .hoverImgBox {
+        height: 185px;
+        position: relative;
+      }
+      .hoverImg {
+        display: none;
+      }
+      img {
+        position: absolute;
+        left: 50%;
+        margin-left: -92.5px;
+        top: 0;
+        cursor: pointer;
+      }
+    }
+  }
+  .section8 {
+    
+      .imgBox {
+        padding-top: 50px;
+        float: left;
+        width: 50%;
+      }
+      .leftBox {
+        float: left;
+        width: 50%;
+        padding-top: 100px;
+        padding-right: 50px;
+        small {
+          color: #666;
+          font-weight: normal;
+        }
+        p {
+          color: #999;
+          line-height: 30px;
+        }
+        button {
+          margin-top: 50px;
+        }
+        ul {
+          margin-top: 80px;
+          margin-bottom: 30px;
+          list-style-position: inside;
+          color: #999;
+          li {
+            margin: 20px 0;
+          }
+        }
+        .videoLink {
+          margin-top: 30px;
+          img {
+            position:relative;
+            top: 3px;
+            margin-right: 10px;
+          }
+          a {
+            color: #16628F;
+            &:hover {
+              text-decoration: underline
+            }
+          }
+        }
+      }
+  }
+}

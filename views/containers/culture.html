@@ -1,0 +1,144 @@
+{% extends "root.html" %} {% block main %}
+<div class="cultureContainer">
+  <section class="section1">
+    <div class="pageWidth">
+      <div class="sectionHeader">
+        <h1>企业文化</h1>
+        <h2>CORPORATE CULTURE</h2>
+      </div>
+      <div class="clearBoth">
+        <div class="cultureBox">
+          <div class="contentBox">
+            <img src="/public/img/closetomk/img_zjmk_culture1.png" alt="">
+            <h3>使命</h3>
+            <p>
+              生命、阳光、美康——致力于人类健康事业，让生命充满阳光。
+            </p>
+          </div>
+        </div>
+        <div class="cultureBox">
+          <div class="contentBox">
+            <img src="/public/img/closetomk/img_zjmk_culture2.png" alt="">
+            <h3>愿景</h3>
+            <p>
+              打造行业一流的医学检验集约化系统， 让诊断结果更精准、让医疗服务更便捷。
+              <br>>> 诊断产品生产平台
+              <br>>> 销售网络渠道平台
+              <br>>> 医学（检验）服务平台
+              <br>>> 信息化系统集成平台
+            </p>
+          </div>
+
+        </div>
+        <div class="cultureBox">
+          <div class="contentBox">
+            <img src="/public/img/closetomk/img_zjmk_culture3.png" alt="">
+            <h3>价值观</h3>
+            <p>
+              创新、高效、敬业、责任。
+            </p>
+          </div>
+
+        </div>
+        <div class="cultureBox">
+          <div class="contentBox">
+            <img src="/public/img/closetomk/img_zjmk_culture4.png" alt="">
+            <h3>宗旨</h3>
+            <p>
+              科技创新、以人为本。
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section class="section2">
+    <div class="pageWidth clearBoth">
+        <div class="imgBox">
+            <img src="/public/img/closetomk/img_zjmk_qikan13.png" alt="">
+          </div>
+          <div class="textBox">
+            <h2>美康生物第十三期企业期刊</h2>
+            <p>
+                美康生物第十三期企业期刊
+            </p>
+            <button>在线预览</button>
+          </div>
+    </div>
+  </section>
+  <section class="section3">
+      <div class="slideBox pageWidth">
+          <div class="swiperBtn swleftBtn">
+              <i class="iconfont">&#xe6a5;</i>
+            </div>
+            <div class="swiperBtn swrightBtn">
+              <i class="iconfont">&#xe62f;</i>
+            </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper" style="width: 3080px; height: 250px; transform: translate3d(-660px, 0px, 0px); transition-duration: 0.3s;">
+            <div class="swiper-slide red-slide swiper-slide-visible swiper-slide-active" style="width: 220px; height: 250px;">
+              <div class="imgBox">
+                <img src="/public/img/closetomk/img_zjmk_qikan13.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide blue-slide swiper-slide-visible" style="width: 220px; height: 250px;">
+                <div class="imgBox">
+                    <img src="/public/img/closetomk/img_zjmk_qikan12.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide orange-slide swiper-slide-visible" style="width: 220px; height: 250px;">
+                <div class="imgBox">
+                    <img src="/public/img/closetomk/img_zjmk_qikan11.png" alt="">
+                  </div>
+            </div>
+            <div class="swiper-slide green-slide" style="width: 220px; height: 250px;">
+                <div class="imgBox">
+                    <img src="/public/img/closetomk/img_zjmk_qikan10.png" alt="">
+                  </div>
+            </div>
+            <div class="swiper-slide pink-slide" style="width: 220px; height: 250px;">
+                <div class="imgBox">
+                    <img src="/public/img/closetomk/img_zjmk_qikan9.png" alt="">
+                  </div>
+            </div>
+            <div class="swiper-slide red-slide" style="width: 220px; height: 250px;">
+                <div class="imgBox">
+                    <img src="/public/img/closetomk/img_zjmk_qikan8.png" alt="">
+                  </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+  </section>
+</div>
+{% endblock %} {% block js%}
+
+<script type="text/javascript">
+ 
+  var mySwiper
+
+  $(function () {
+    mySwiper = new Swiper('.swiper-container', {
+      paginationClickable: true,
+      slidesPerView: 4,
+      loop: true
+    })
+    $('.swleftBtn').on('click', function (e) {
+      e.preventDefault()
+      mySwiper.swipePrev()
+    })
+    $('.swrightBtn').on('click', function (e) {
+      e.preventDefault()
+      mySwiper.swipeNext()
+    })
+
+  })
+
+</script>
+
+{% endblock %}
