@@ -56,6 +56,78 @@
       }
     }
   }
+  .section3 {
+    height: 768px;
+    background: url('/public/img/products/bg_product_no3.png') center no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    .titleBox {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      small {
+        color: #666;
+        font-weight: normal;
+        margin-left: 10px;
+
+      }
+      p {
+        width: 400px;
+        line-height: 30px;
+        color: #666;
+      }
+    }
+    .inspectionMap {
+      position: relative;
+      width: 900px;
+      height:670px;
+      margin: 0 auto;
+      background: url('/public/img/products/map.png') center no-repeat;
+      background-size: 100% 100%;
+      a {
+        position: absolute;
+        width: 3.3333%;
+        height: 4.4776%;
+        z-index: 2;
+        // background: #fff;
+        .cardBox {
+          display: none;
+          position: absolute;
+          top: -25px;
+          left: 40px;
+          width: 300px;
+          height: 100px;
+          background: #fff;
+          border: 1px solid #ddd;
+          box-shadow: 0 5px 10px #999;
+          &:after {
+            content: '';
+            display: block;
+            clear: both;
+          }
+          .imgBox{
+            float: left;
+            width: 40%;
+            img {
+              width: 100%;
+            }
+          }
+          .textBox {
+            float: right;
+            width: 60%;
+            overflow: hidden;
+            color: #666;
+            padding: 10px;
+          }
+        }
+        &:hover {
+          .cardBox{
+            display: block;
+          }
+        }
+      }
+    }
+  }
   .section4 {
     padding: 100px 0;
     .headerBox {
@@ -751,7 +823,61 @@
 
 .inspectionContainer {
   .banner1 {
-
+    height: 700px;
+    background: url('/public/img/products/bg_no3.png') center no-repeat;
+    background-size: cover;
+    .inspectionMap {
+      position: relative;
+      width: 900px;
+      height:670px;
+      margin: 0 auto;
+      background: url('/public/img/products/map.png') center no-repeat;
+      background-size: 100% 100%;
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3.3333%;
+        height: 4.4776%;
+        z-index: 2;
+        // background: #fff;
+      }
+    }
+  }
+  .companyBox {
+    padding: 50px 0;
+    .imgBox {
+      float: left;
+      width: 30%;
+    }
+    .textBox {
+      float: right;
+      width: 60%;
+      color: #666;
+      line-height: 30px;
+      padding: 30px 0;
+    }
+  }
+  .section3 {
+    background: url('/public/img/products/bg_testcenter.png') center no-repeat;
+    background-size: cover;
+    height: 275px;
+    padding: 30px 0;
+    h1 {
+      text-align: center;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    .listBox {
+      li {
+        list-style: none;
+        width: 25%;
+        overflow: hidden;
+        color: #666;
+        float: left;
+        margin: 10px 0;
+      }
+    }
   }
 }
 
