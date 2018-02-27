@@ -10,9 +10,7 @@
     background: url('/public/img/products/bg_product.png') center no-repeat;
     background-size: cover;
     .textBox{
-      position: absolute;
-      top: 80px;
-      left: 18%;
+      margin-top: 100px;
       color: #666;
       line-height: 40px;
     }
@@ -194,6 +192,7 @@
   }
   .section5 {
     padding: 50px 0;
+    background: #F7F6F6;
     h1 {
       margin-bottom: 50px;
       text-align: center;
@@ -241,11 +240,9 @@
     }
   }
   .section6 {
-    background: url('/public/img/products/bg_manbing.png') center no-repeat;
-    background-size: cover;
-      height: 400px;
+    background: #fff;
+      height: 500px;
       .imgBox {
-        padding-top: 50px;
         float: left;
         width: 50%;
       }
@@ -313,15 +310,14 @@
   .section8 {
     
       .imgBox {
-        padding-top: 50px;
         float: left;
         width: 50%;
       }
       .leftBox {
         float: left;
         width: 50%;
-        padding-top: 100px;
-        padding-right: 50px;
+        padding-top: 50px;
+        padding-left: 100px;
         small {
           color: #666;
           font-weight: normal;
@@ -334,7 +330,7 @@
           margin-top: 50px;
         }
         ul {
-          margin-top: 80px;
+          margin-top: 50px;
           margin-bottom: 30px;
           list-style-position: inside;
           color: #999;
@@ -549,6 +545,7 @@
   }
 
   .section8 {
+    background-color: #f5f5f5;
     padding: 50px 0;
     .mainBox {
       height: 600px;
@@ -560,6 +557,8 @@
       float: left;
       width: 50%;
       padding: 50px;
+      height: 298px;
+      background: #fff;
       h3 {
         margin-bottom: 30px;
       }
@@ -816,6 +815,43 @@
         padding: 8px 30px;
         background: #333;
         color: #fff;
+      }
+    }
+    .itemList {
+      margin-top: 50px;
+      .itemBox {
+        border-bottom: 1px dashed #ddd;
+        &.active {
+          background: #f6f7f7;
+          .itemBody {
+            display: block
+          }
+          .iconfont {
+            transform: rotate(90deg)
+          }
+        }
+      }
+      .itemHeader {
+        height: 50px;
+        line-height: 50px;
+        color: #333;
+        font-size: 16px;
+        padding: 0 30px;
+        cursor: pointer;
+        &:hover, &.active {
+          background: #f6f7f7;
+        }
+        .iconfont {
+          float: right;
+        }
+      }
+      .itemBody {
+        display: none;
+        padding: 10px 50px;
+        li {
+          list-style: none;
+          margin: 10px 0;
+        }
       }
     }
   }

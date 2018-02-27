@@ -12,9 +12,14 @@
         <div class="itemBox">
           <div class="itemHeader">
               肝功能检测项目
+              <i class="iconfont">&#xe62f;</i>
           </div>
           <div class="itemBody">
-            
+            <li>丙氨酸氨基转移酶	ALT</li>
+            <li>丙氨酸氨基转移酶	ALT</li>
+            <li>丙氨酸氨基转移酶	ALT</li>
+            <li>丙氨酸氨基转移酶	ALT</li>
+            <li>丙氨酸氨基转移酶	ALT</li>
           </div>
         </div>
       </div>
@@ -24,7 +29,11 @@
 {% endblock %} {% block js%}
 
 <script type="text/javascript">
- 
+ $(function(){
+   $('.itemBox').click(function(){
+     $(this).toggleClass('active')
+   })
+ })
 </script>
 
 {% endblock %}

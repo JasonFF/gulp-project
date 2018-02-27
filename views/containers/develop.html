@@ -227,14 +227,25 @@
   })
 
   $(function () {
+    var open = false;
     $('.openAll').click(function (e) {
-      $('.maskBox').css({
-        display: 'none'
-      })
-      $('.developRoad').css({
-        height: 'auto',
-        paddingBottom: '100px'
-      })
+      if (!open) {
+        $('.openAll').html("收起")
+        $('.developRoad').css({
+          height: 'auto',
+          paddingBottom: '100px'
+        })
+        open = true
+      } else {
+        $('.openAll').html("展开全部 >>")
+        $('.developRoad').css({
+          height: '600px',
+          paddingBottom: '150px'
+        })
+        open = false
+      }
+
+     
     })
   })
 

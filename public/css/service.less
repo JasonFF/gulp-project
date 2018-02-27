@@ -1,6 +1,36 @@
 @import './const.less';
 
 .serviceContainer {
+  .fixedBox {
+    position: fixed;
+    right: 0;
+    bottom: 15%;
+    z-index: 9999;
+    margin-right: -124px;
+    transition: all 0.3s ease;
+    &:hover {
+      margin-right: 0px
+    }
+    .onlineAsk {
+      width: 200px;
+    }
+    .imgBox {
+      float: left;
+    }
+    .moreList {
+      float: right;
+      width: 124px;
+      min-height: 80px;
+      background: #fff;
+      padding: 0 10px;
+      ul {
+        list-style: none;
+        li {
+          margin: 8px 0;
+        }
+      }
+    }
+  }
   .banner1 {
     position: relative;
     width: 100%;
@@ -29,8 +59,9 @@
       width: 50%;
       height: 100%;
       float: left;
-      background: url('/public/img/high_qulity/img_1.png') center no-repeat;
+      background: url('/public/img/high_qulity/img_1.png') no-repeat;
       background-size: cover;
+      background-position: right;
       .textBox {
         margin-top: 130px;
         margin-left: 50px;
@@ -51,8 +82,9 @@
       width: 50%;
       height: 100%;
       float: right;
-      background: url('/public/img/high_qulity/img_2.png') center no-repeat;
+      background: url('/public/img/high_qulity/img_2.png') no-repeat;
       background-size: cover;
+      background-position: left;
       .textBox {
         margin-top: 140px;
         margin-left: 50px;
