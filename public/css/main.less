@@ -211,3 +211,32 @@ button {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #999;
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: none;
+  text-align: center;
+  &.show {
+    display: block
+  }
+  .modalMask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .modalContainer {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+  }
+}

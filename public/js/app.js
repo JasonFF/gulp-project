@@ -83,3 +83,23 @@
 
   window.PagiMk = PagiMk;
 });
+$(function(){
+  function MKModal (modalContainer, config) {
+    this.$modalContainer = $(modalContainer)
+    this.onShow = config.onShow
+    this.onClose = config.onClose
+  }
+  MKModal.prototype.show = function () {
+    var self = this;
+    this.$modalContainer.addClass('show')
+    this.onShow()
+    this.$modalContainer.find('.modalMask').on('click', function() {
+      self.close()
+    })
+  }
+  MKModal.prototype.close = function() {
+    this.$modalContainer.removeClass('show')
+    this.onClose()
+  }
+  window.MKModal = MKModal
+})

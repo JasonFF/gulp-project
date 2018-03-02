@@ -43,11 +43,11 @@
             </div>
           </div>
         </a>
-        <a class="fl imgItem" href="" style="width:606px;height:509px">
+        <a class="fl imgItem" id="videoBtn" href="javascript:void(0)" style="width:606px;height:509px">
           <img src="/public/img/index_img/img_videocenter.png" alt="">
           <div class="textBox textBox1">
               <div style="margin-top: 30px;text-align: right;color:#fff;line-height: 30px;">
-                企业视频简介<br>
+                企业视频简介 <br>
                 查看详情 >>
               </div>
               <h1 style="margin-top: 230px; font-size:2em">视频中心</h1>
@@ -104,10 +104,32 @@
     
   </div>
 </div>
+<div class="modal">
+  <div class="modalMask"></div>
+  <div class="modalContainer">
+    <div class="videoContainer">
+      <video id="video" loop controls src="http://122.227.228.175/69755D70DC23382DC4BBF85FD7/03000809005A9425089A6D82F8F119D65596F1-48E5-480E-AB9F-DEA3B230528A.mp4?ccode=0502&duration=395&expire=18000&psid=27861cf1eb072726705fdfa40302fb1d&ups_client_netip=7ae3e2a2&ups_ts=1519714569&ups_userid=&utid=nK7cEix0ZkkCAT2uHs4BxXc1&vid=XMzQyNDg0NjU0OA%3D%3D&vkey=A147dd081d50a3c3e802db0a9c5bf3ae6&s=621eefbfbd39efbfbdef"></video>
+    </div>
+  </div>
+</div>
 
 {% endblock %} {% block js%}
 
 <script type="text/javascript">
+  $(function(){
+    var video = $("#video")[0]
+    var videoModal = new MKModal('.modal',{
+      onClose: function() {
+        video.pause()
+      },
+      onShow: function() {
+        video.play()
+      }
+    })
+    $("#videoBtn").on('click', function() {
+      videoModal.show()
+    })
+  })
   $(function () {
     var showIndex = 1
     function show(index) {
